@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const { exec } = require("child_process");
 
 const app = express();
-const PORT = 3000;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 // Hardcoded secret (bad practice)
 const ADMIN_PASSWORD = "admin123";
